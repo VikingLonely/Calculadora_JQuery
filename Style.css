@@ -1,0 +1,75 @@
+h1{
+    text-align: center; /*coloca o titulo no centro da tela*/
+    font-size: 45px; /*aumenta o tamanho da fonte do titulo*/
+    font-family: 'Times New Roman', Times, serif;/*muda o estilo da fonte*/
+}
+h2{
+    text-align: center; /*coloca o nome da calculadora no centro do aparelho*/
+    height: 50px;   /*altura do nome para os botoes*/
+    font-size: 35px; /*aumenta o tamanho da fonte*/
+}
+*{
+    margin: 0; /*faz com que o fundo seja aplicado sobre toda a tela*/
+    padding: 0;/*faz com que o fundo seja aplicado sobre toda a tela*/
+}
+.fundo{ /*puxa a div com classe=fundo*/
+    
+    background-color: rgb(3, 3, 98);/* muda a cor do fundo*/ 
+    height: 100vh; /*Aplica o fundo em todo a conteudo*/
+    color:white; /*Muda a cor da fonte*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*muda o estilo da fonte*/
+    
+}
+.calculadora{ /*puxa a div com classe=calculadora*/
+    position: absolute; 
+    background-color: black; /*coloca a cor do fundo da calculadora*/
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /*coloca a calculadora no centro da tela*/
+    border-radius: 15px; /*arredonda a borda da calculadora*/
+    padding: 20px; /*distacia entre os elementos e a borda*/
+}
+.botao{ /*configura para todos os botoes*/
+    background-color: gray; /*cor de fundo dos botoes*/
+    width: 50px; /*largura do botoes*/
+    height: 40px; /*altura do botoes*/
+    font-size: 30px; /*tamanho da fonte*/
+    cursor: pointer; /*muda o cursor quando esta em cima do botão*/
+    margin: 0.5px; /*coloca uma margem entre os botoes*/
+    
+}
+#resultado{
+    width: 204px; /*tamanho da tela que vai aparecer o resultado*/
+    background-color: white;/*cor da tela*/
+    margin: 3px;/* tamanha ta margem com os botoes*/
+    height: 30px; /*altura da tela refetente ao centro da tela do navegador*/
+    font-size: 22px;/*tamanha da fonte que vai aparecer o resultado*/
+    color: black;/*cor da fonte*/
+    text-align: right;/*alinha o texto a direita*/
+}
+
+.botao_igual{
+    background-color: gray; /*cor de fundo dos botoes*/
+    width: 50px; /*largura do botoes*/
+    height: 87px; /*altura do botoes*/
+    font-size: 30px; /*tamanho da fonte*/
+    cursor: pointer; /*muda o cursor quando esta em cima do botão*/
+    margin: 0.5px;
+}
+
+.botao_zero{
+    background-color: gray; /*cor de fundo dos botoes*/
+    width: 102px; /*largura do botoes*/
+    height: 40px; /*altura do botoes*/
+    font-size: 30px; /*tamanho da fonte*/
+    cursor: pointer; /*muda o cursor quando esta em cima do botão*/
+    margin: 0.5px; 
+}
+
+#op{
+    position: absolute;
+    z-index: 999;
+    margin: 15px 10px;
+    font-weight: bold;
+    color: black;
+}
